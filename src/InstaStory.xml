@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="mendix.instastory.InstaStory" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Insta Story</name>
+    <description>Instagram-like stories</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <propertyGroup caption="Display">
+                <property key="content" type="widgets">
+                    <caption>Content</caption>
+                    <description/>
+                </property>
+            </propertyGroup>
+            <propertyGroup caption="Data source">
+                <property key="storysource" type="datasource" isList="true">
+                    <caption>Source</caption>
+                    <description/>
+                </property>
+                <property key="stories" type="widgets" dataSource="storysource">
+                    <caption>Stories</caption>
+                    <description/>
+                </property>
+            </propertyGroup>
+        </propertyGroup>
+    </properties>
+</widget>
